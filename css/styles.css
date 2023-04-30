@@ -125,7 +125,7 @@ body {
     font-family: var(--main-font-family);
         font-weight: 700;
         font-size: 36px;
-        line-height: 40px;
+        line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -271,7 +271,7 @@ footer p{
         line-height: 21px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #F4F4FD;
+        color: #f4f4fd;
 }
 
 
@@ -298,6 +298,7 @@ footer p{
             text-align: center;
             letter-spacing: 0.04em;
             color: #4d5ae5;
+            cursor: pointer;
 }
 .portfolio-filters-item-text{
     font-family: var(--main-font-family);
