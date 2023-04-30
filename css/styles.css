@@ -92,6 +92,11 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--titel-text-color);
+    font-style: normal;
+}
+.contacts-item:hover,
+.contacts-item:focus{
+    color: #404bbf;
 }
 
 
