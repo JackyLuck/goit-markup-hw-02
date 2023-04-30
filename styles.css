@@ -88,7 +88,7 @@ ul{
         line-height: 60px;
         color: #FFFFFF;
 }
-.btn{
+.order-btn{
     padding: 16px 32px;
     background: #4D5AE5;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -103,7 +103,7 @@ ul{
 
 /* Features section */
 
-.features_list{
+.features-list{
     padding: 0px;
     gap: 24px;
     max-width: 1128px;
@@ -112,17 +112,8 @@ ul{
     margin-top: 120px;
     margin-bottom: 120px
 }
-.features_wrapper h3{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-        margin: 0;
-}
-.features_wrapper p{
+
+.subheader-text{
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -182,7 +173,7 @@ ul{
         letter-spacing: 0.02em;
         color: #2E2F42;
 }
-.team_wrapper p{
+.subheader-text{
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -255,7 +246,7 @@ footer p{
     margin-top: 96px;
     margin-bottom: 72px;
 }
-.portfolio-filters-item{
+.portfolio-filters-button{
         padding: 12px 24px;
         background: #4D5AE5;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -273,8 +264,8 @@ footer p{
         letter-spacing: 0.04em;
         color: #FFFFFF;
 }
-.portfolio-filters-item:hover,
-.portfolio-filters-item:focus{
+.portfolio-filters-button:hover,
+.portfolio-filters-button:focus{
     background: #404BBF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
