@@ -98,14 +98,13 @@ body {
 /* Above-the-fold Section */
 
 .hero{
-    min-height: 600px;
-    background-color: var(--primary-text-color);
-    display: flex;
-}
-.hero-wrapper{
-    max-width: 496px;
-    margin: auto;
-    text-align: center;
+        text-align: center;
+            min-height: 600px;
+            background-color: var(--primary-text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 }
 .main-heading{
     font-family: var(--main-font-family);
@@ -114,7 +113,8 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--primary-bg-color);
+    color: #ffffff;
+    max-width: 496px;
 }
 .section-heading{
     font-family: var(--main-font-family);
@@ -147,21 +147,19 @@ body {
 }
 .order-btn{
     padding: 16px 32px;
-    background: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        font-family: var(--main-font-family);
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            color: var(--primary-bg-color);
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 .order-btn:hover,
 .order-btn:focus{
-            background: var(--btn-hover-color);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
+            background-color: #404BBF;
             cursor: pointer;
 }
 
