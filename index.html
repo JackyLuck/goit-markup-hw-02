@@ -10,43 +10,47 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet">
+        <link rel="styles" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
         <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     </head>
 
     <body>
         <header class="main-header">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo link">
-                    Web<span class="logo-style-header">Studio</span>
-                </a>
-                <ul class="navmenu list">
-                    <li>
-                        <a class="navmenu-item link" href="./index.html">
-                            Studio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="navmenu-item link" href="./portfolio.html">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="navmenu-item link" href="">
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="contacts list">
-                <ul class="list">
-                    <li>
-                        <a class="contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a class="contacts-item link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-            </address>
+            <div class="container header-container">
+                <nav class="main-nav">
+                    <a href="./index.html" class="logo link">
+                        Web<span class="logo-style-header">Studio</span>
+                    </a>
+                    <ul class="navmenu list">
+                        <li>
+                            <a class="navmenu-item link" href="./index.html">
+                                Studio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navmenu-item link" href="./portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navmenu-item link" href="">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="contacts list">
+                        <li>
+                            <a class="contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="contacts-item link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
         </header>
         <main>
             <!-- Above-the-fold -->
@@ -55,38 +59,38 @@
                     <button class="order-btn" type="button">Order Service</button>
             </section>
             <!-- Features -->
-            <section>
+            <section class="container">
                 <h2 hidden class="section-heading">features</h2>
                 <ul class="features-list list">                   
                     <li>
-                        <h3 class="subheading">Strategy</h3>
+                        <h3 class="subheading features-subheading-style">Strategy</h3>
                         <p class="reg-text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution
                         </p>
                      </li>
 
                     <li>
-                        <h3 class="subheading">Punctuality</h3>
+                        <h3 class="subheading features-subheading-style">Punctuality</h3>
                         <p class="reg-text">Bring the key message to the brand's audience for the best price within the shortest possible time.
                         </p>
                     </li>
 
                     <li>
-                        <h3 class="subheading">Diligence</h3>
+                        <h3 class="subheading features-subheading-style">Diligence</h3>
                         <p class="reg-text">Research and confirm brands that present the strongest digital growth opportunities and minimize
                             risk.</p>
                     </li>
 
                     <li>
-                        <h3 class="subheading">Technologies</h3>
+                        <h3 class="subheading features-subheading-style">Technologies</h3>
                         <p class="reg-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
                         </p>
                     </li>
                 </ul>
             </section>
             <!-- Section3 -->
-            <section>
-            <h2 class="section-heading">What are we doing</h2>
+            <section class="container">
+            <h2 class="section-heading activities-heading-style">What are we doing</h2>
                 <ul class="activities list">
                     <li><img width="360" src="./images/Rectangle1.jpg" alt="computer screen"></li>
                     <li><img width="360" src="./images/Rectangle2.jpg" alt="phone screen"></li>
@@ -100,31 +104,33 @@
                         <li class="team-list-item">
                             <img src="./images/Mark.jpg" alt="Mark Guerrero" width="264" height="260">
                             <h3 class="subheading team-names">Mark Guerrero</h3>
-                            <p class="reg-text team-names">Product Designer</p>
+                            <p class="reg-text  team-positions">Product Designer</p>
                         </li>
                         <li class="team-list-item">
                             <img src="./images/Tom.jpg" alt="Tom Ford" width="264" height="260">
                             <h3 class="subheading team-names">Tom Ford</h3>
-                            <p class="reg-text team-names">Frontend Developer</p>
+                            <p class="reg-text  team-positions">Frontend Developer</p>
                         </li>
                         <li class="team-list-item">
                             <img src="./images/Camila.jpg" alt="Camila Garcia" width="264" height="260">
                             <h3 class="subheading team-names">Camila Garcia</h3>
-                            <p class="reg-text team-names">Marketing</p>
+                            <p class="reg-text  team-positions">Marketing</p>
                         </li>
                         <li class="team-list-item">
                             <img src="./images/Daniel.jpg" alt="Daniel Wilson" width="264" height="260">
                             <h3 class="subheading team-names">Daniel Wilson</h3>
-                            <p class="reg-text team-names">UI Designer</p>
+                            <p class="reg-text team-positions">UI Designer</p>
                         </li>
                     </ul>
             </section>
         </main>
         <footer class="main-footer">
-            <a class="logo link" href="./index.html">
-                Web<span class="logo-style-footer">Studio</span>
-            </a>
-            <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            <div class="container">
+                <a class="logo link" href="./index.html">
+                    Web<span class="logo-style-footer">Studio</span>
+                </a>
+                <p class="reg-text footer-text-style">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            </div>
         </footer>
     </body>
 
