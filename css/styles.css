@@ -138,6 +138,9 @@ img{
 .contacts{
     display: flex;
     gap: 40px;
+    justify-content: center;
+    padding-top: 24px;
+        padding-bottom: 24px;
 }
 .contacts-item {
     font-family: var(--main-font-family);
