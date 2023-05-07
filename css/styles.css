@@ -302,12 +302,12 @@ img{
 /* Portfolio page */
 .portfolio-filters-container{
     padding-top: 92px;
+    padding-bottom: 120px;
 }
 .portfolio-filters{
     display: flex;
-    max-width: 652px;
-    justify-content: space-between;
-    margin: auto;
+    gap: 24px;
+    justify-content: center;
     margin-bottom: 72px;
 }
 
@@ -316,39 +316,41 @@ img{
         background-color: #F4F4FD;
         border-radius: 4px; 
         font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            color: #4d5ae5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;    
+        color: #4d5ae5;
+        border: 1px solid #e7e9fc;
+        border-radius: 4px;
 }
 
 .portfolio-filters-button:hover,
 .portfolio-filters-button:focus{
+    border: 1px solid transparent;
     background-color: #404BBF;
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Selection section */
 .selection{
-    max-width: 1128px;
     display: flex;
     row-gap: 48px;
-    justify-content: space-between;
+    column-gap: 24px;
     flex-wrap: wrap;
-    padding: 0;
-    margin: auto;
-    margin-bottom: 120px;
 }
 .selection-item{
     max-width: 360px;
     background: var(--primary-bg-color);
     border: 1px solid #E7E9FC;
     margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
+}
+.selection-item-text-container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-items{
-    margin: 32px 0 8px 16px
-}
-.portfolio-items-text{
-    margin: 0px 0 32px 16px
+    margin-bottom: 8px;
 }
