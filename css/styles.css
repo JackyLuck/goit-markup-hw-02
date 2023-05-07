@@ -193,6 +193,9 @@ img{
             background-color: #404BBF;
             cursor: pointer;
 }
+.menu-padding{
+    padding: 24px 0;
+}
 
 /* Features section */
 .features-section{
