@@ -207,6 +207,13 @@ img{
 .features-list-item{
     width: calc((100% - 72px) / 4);
 }
+.features-list-item-icon{
+    max-width: 264px;
+    max-height: 112px;
+    background-color: #F4F4FD;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .features-subheading-style{
     margin-bottom: 8px;
 }
@@ -270,6 +277,60 @@ img{
         color: var(--titel-text-color);
         text-align: center;
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    margin-top: 8px;
+}
+
+.social-list-link{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color: var(--btn-hover-color);
+}
+
+/* Cusomers Section */
+.customer-container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customer-list{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 72px;
+}
+.customer-list-item{
+   
+}
+.customer-link{
+    width: 168px;
+        height: 88px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.customer-icon{
+   fill: #8E8F99;
+}
+.customer-list-item:hover{
+    border: 1px solid var(--btn-hover-color);
+    border-radius: 4px;
+}
+.customer-list-item:hover .customer-icon{
+    fill:var(--btn-hover-color);
+}
+
 
 /* Footer section */
 
@@ -279,6 +340,9 @@ img{
     padding-bottom: 100px;
 }
 
+.footer-container{
+    display: flex;
+}
 .footer-text-style{
     max-width: 264px;
     color: var(--primary-bg-color);
@@ -296,6 +360,13 @@ img{
 }
 .logo-style-footer{
         color: #f4f4fd;
+}
+.footer-socials{
+    margin-left: 120px;
+}
+.footer-socials-text{
+    color: var(--primary-bg-color);
+    margin-bottom: 16px;
 }
 
 
@@ -343,6 +414,11 @@ img{
     background: var(--primary-bg-color);
     width: calc((100% - 48px) / 3);
 }
+.selection-item-image{
+    background-color: var(--accent-color);
+    Width: 360px;
+    Height: 300px
+}
 .selection-item-text-container{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -350,4 +426,7 @@ img{
 }
 .portfolio-items{
     margin-bottom: 8px;
+}
+.selection-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
