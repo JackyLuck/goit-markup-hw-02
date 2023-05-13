@@ -397,6 +397,8 @@ img{
 .footer-socials-text{
     color: var(--primary-bg-color);
     margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -460,6 +462,7 @@ img{
 .selection-item-link{
     display: block;
 }
-.selection-item-link:hover{
+.selection-item-link:hover,
+.selection-item-link:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
