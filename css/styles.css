@@ -309,7 +309,7 @@ img{
 }
 
 .social-list-link:focus{
-    background-color: var(--btn-hover-color);
+    background-color: #404bbf;
 }
 
 .social-icon{
@@ -352,9 +352,12 @@ img{
     border: 1px solid var(--btn-hover-color);
     border-radius: 4px;
     color: #404bbf;
+    border-color: #404bbf;
 }
 .customer-link:hover .customer-icon{
     fill:var(--btn-hover-color);
+    border-color: #404bbf;
+    color: #404bbf;
 }
 
 
@@ -397,8 +400,14 @@ img{
 .footer-socials-text{
     color: var(--primary-bg-color);
     margin-bottom: 16px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+    background-color: #31d0aa;
 }
 
 
@@ -462,7 +471,9 @@ img{
 .selection-item-link{
     display: block;
 }
-.selection-item-link:hover,
-.selection-item-link:focus{
+.selection-item-link:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.selection-item-link:focus{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
