@@ -304,12 +304,9 @@ img{
     justify-content: center;
     align-items: center;
 }
-.social-list-link:hover{
-    background-color: var(--btn-hover-color);
-}
-
+.social-list-link:hover,
 .social-list-link:focus{
-    background-color: #404bbf;
+    background-color: var(--btn-hover-color);
 }
 
 .social-icon{
@@ -349,8 +346,6 @@ img{
 }
 .customer-link:hover,
 .customer-link:focus{
-    border: 1px solid var(--btn-hover-color);
-    border-radius: 4px;
     color: #404bbf;
     border-color: #404bbf;
 }
