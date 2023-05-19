@@ -125,11 +125,26 @@ img{
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     padding: 24px 0;
+    position: relative;
+    overflow: hidden;
 }
+.navmenu-item::after{
+    content: "";
+    display: block;
+    width: 66px;
+    height: 4px;
+    background-color: #404BBF;
+    visibility: hidden;
+}
+
+
 .navmenu-item:hover,
-.navmenu-item:focus,
-.navmenu-item::selection{
+.navmenu-item:focus{
     color: #404bbf;
+    
+}
+.navmenu-item:active ::after{
+    visibility: visible;
 }
 
 .contacts{
@@ -406,6 +421,53 @@ img{
     background-color: #31d0aa;
 }
 
+/* Modal window */
+
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+}
+
+.modal{
+    position: absolute;
+    width: 408px;
+    height: 584px;
+    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    background-color: #FCFCFC;
+
+}
+
+.modal-close-btn{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+            background-color: #E7E9FC;
+            border: 1px solid #555555;
+            border-radius: 50%;
+
+}
+
+.modal-close-icon{
+
+}
 
 /* Portfolio page */
 .portfolio-filters-container{
@@ -455,6 +517,28 @@ img{
     background-color: var(--accent-color);
     Width: 360px;
     Height: 300px
+}
+.selection-item-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    color: var(--primary-bg-color);
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    height: 100%;
+    width: 100%;
+    padding: 40px 32px 164px;
+    background-color: var(--accent-color);
+    overflow: auto;
+    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.selection-item-wrapper:hover .overlay,
+.selection-item-wrapper:focus .overlay{
+    transform: translateY(0);
 }
 .selection-item-text-container{
     padding: 32px 16px;
