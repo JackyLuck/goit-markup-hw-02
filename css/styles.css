@@ -127,8 +127,13 @@ img{
     position: relative;
     overflow: hidden;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+}
+.navmenu-item:hover {
+    
     color: #404bbf;
 }
+
 .navmenu-item::after{
     content: "";
     position: absolute;
@@ -138,7 +143,6 @@ img{
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
-    visibility: hidden;
 }
 .navmenu-item:hover .navmenu-item::after{
     visibility: visible;
