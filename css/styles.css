@@ -39,7 +39,9 @@ ul,ol{
 img{
     display: block;
 }
-
+input{
+    font-family: inherit;
+}
 /* Components */
 
 .container{
@@ -387,6 +389,7 @@ img{
     background-color: var(--primary-text-color);
     padding-top: 100px;
     padding-bottom: 100px;
+    
 }
 
 .footer-container{
@@ -428,6 +431,58 @@ img{
 .footer-social-link:hover,
 .footer-social-link:focus{
     background-color: #31d0aa;
+}
+
+.footer-subscribe-form {
+    margin: auto;
+}
+
+.footer-subscribe-text{
+    font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+        color: #ffffff;
+}
+
+.subscribe-input{
+    background: var(--navyblue, #2E2F42);
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    color: var(--white, #FFF);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.48px;
+        display: inline;
+        margin-right: 24px;
+}
+
+.subscribe-btn{
+    border-radius: 4px;
+    border: none;
+    background: var(--iris, #4D5AE5);
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    display: inline;
+    color: var(--white, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
 }
 
 /* Modal window */
