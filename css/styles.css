@@ -469,6 +469,7 @@ input{
 }
 
 .subscribe-btn{
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +479,6 @@ input{
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
-    font-family: "Roboto", sans-serif;
     color: var(--white, #FFF);
         text-align: center;
         font-family: Roboto;
