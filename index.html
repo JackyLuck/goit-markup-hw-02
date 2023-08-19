@@ -24,7 +24,7 @@
                     </a>
                     <ul class="navmenu list">
                         <li>
-                            <a class="navmenu-item link" href="./index.html">
+                            <a class="navmenu-item link " href="./index.html">
                                 Studio
                             </a>
                         </li>
@@ -378,43 +378,44 @@
                     </ul>
                 </div>
             </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modal-close-btn" data-modal-close>
+                        <svg class="modal-close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <form name="modal-form">
+                        <h2>Leave your contacts and we will call you back</h2>
+                        <label class="modal-form-field">
+                            <span class="modal-form-input-name">Name </span>
+                            <input type="text" name="Name" class="modal-form-input" required pattern="[а-яА-Яa-zA-Z]+" autofocus>
+                        </label>
+                        <label class="modal-form-field">
+                            <span class="modal-form-input-name">Phone</span>
+                            <input type="tel" name="Phone" class="modal-form-input" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                        </label>
+                        <label class="modal-form-field">
+                            <span class="modal-form-input-name">Email</span>
+                            <input type="email" name="Email" class="modal-form-input" pattern="[a-zA-Z]" required>
+                        </label>
+                        <label class="modal-form-field">
+                            <span class="modal-form-input-name">Comment</span>
+                            <textarea name="user_message" class="modal-form-message" placeholder="Text Input"></textarea>
+                        </label>
+                        <label class="modal-form-field">
+                            I accept the terms and conditions of <a>Privacy Policy</a>
+                            <input type="checkbox" name="Privacy-Policy" required>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            
+            </div>
         </footer>
         <!-- Modal Window -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button type="button" class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <form name="modal-form"> 
-                    <h2>Leave your contacts and we will call you back</h2>
-                    <label class="modal-form-field">
-                        <span class="modal-form-input-name">Name </span>
-                        <input type="text" name="Name" class="modal-form-input" required pattern="[а-яА-Яa-zA-Z]+" autofocus>
-                    </label>
-                    <label class="modal-form-field">
-                        <span class="modal-form-input-name">Phone</span>
-                        <input type="tel" name="Phone" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
-                    </label>
-                    <label class="modal-form-field">
-                        <span class="modal-form-input-name">Email</span>
-                        <input type="email" name="Email" class="modal-form-input" pattern="[a-zA-Z]" required>
-                    </label>
-                    <label class="modal-form-field">
-                        <span class="modal-form-input-name">Comment</span>
-                        <textarea name="user_message" class="modal-form-message"
-                        placeholder="Text Input"></textarea>
-                    </label>
-                    <label class="modal-form-field">
-                        I accept the terms and conditions of <a>Privacy Policy</a>
-                        <input type="checkbox" name="Privacy-Policy" required >
-                    </label>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-
-        </div>
+       
 
 
         <script src="./js/modal.js"></script>
