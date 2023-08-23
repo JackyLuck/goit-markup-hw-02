@@ -51,6 +51,11 @@ input{
     padding-left: 15px;
     padding-right: 15px;
 }
+@media (max-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
 .main-heading {
     font-weight: 700;
     font-size: 56px;
@@ -120,6 +125,7 @@ input{
     padding: 24px 0;
 }
 .navmenu-item {
+    position: relative;
     font-family: var(--main-font-family);
     font-weight: 500;
     font-size: 16px;
@@ -127,15 +133,56 @@ input{
     letter-spacing: 0.02em;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #2E2F42;
+    color: #404bbf;
+}
+.navmenu-item-studio {
+    position: relative;
+        font-family: var(--main-font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #404bbf;
+}
+.navmenu-item-portfolio {
+    position: relative;
+        font-family: var(--main-font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #404bbf;
 }
 .navmenu-item:hover {
     
     color: #404bbf;
 }
 
-.navmenu-item::after{
-    
+.navmenu-item-studio::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 48px;
+    height: 5px;
+}
+.navmenu-item-portfolio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 65px;
+    height: 5px;
 }
 
 .navmenu-item :active {
@@ -230,6 +277,21 @@ input{
     gap: 24px;
     display: flex;
 }
+@media (max-width: 428px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: auto;
+    }
+    .features-list-item {
+        width: 190px;
+    }
+    .features-icon{
+        display: none;
+    }
+}
+
 .features-icon{
     display: flex;
     align-items: center;
