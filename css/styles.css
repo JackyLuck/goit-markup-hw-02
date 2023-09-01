@@ -977,7 +977,11 @@ input {
 .modal-form-input:focus .input-icon {
     fill: #4D5AE5;
 }
-
+.visually-hidden:checked .checkbox{
+    background-color:  #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
 .modal-form-input-name {
     display: block;
     font-weight: 400;
