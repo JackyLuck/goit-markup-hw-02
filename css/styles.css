@@ -1027,7 +1027,7 @@ input:checked span{
     justify-content: center;
     fill: transparent;
 }
-.visibility:checked .checkbox {
+.visually-hidden:checked .checkbox {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
