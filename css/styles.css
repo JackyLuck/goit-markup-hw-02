@@ -974,7 +974,6 @@ input {
     border-color: #4D5AE5;
 }
 
-.modal-form-input:hover .input-icon,
 .modal-form-input:focus .input-icon {
     fill: #4D5AE5;
 }
