@@ -991,7 +991,11 @@ input {
     color: #8E8F99;
     margin-bottom: 4px;
 }
-
+input:checked span{
+    background-color: #404bbf;
+        border: none;
+        fill: #f4f4fd;
+}
 .modal-form-field {
     font-size: 12px;
     line-height: 1.17;
@@ -1097,7 +1101,7 @@ input {
 
 }
 .whyamidoingthis{
-    
+
 }
 .visually-hidden {
  position: absolute;
