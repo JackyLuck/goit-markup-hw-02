@@ -885,6 +885,9 @@ input {
     background: var(--iris, #4D5AE5);
     padding: 8px 24px;
     max-width: 165px;
+    min-width: 165px;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
     height: 40px;
     color: var(--white, #FFF);
     text-align: center;
