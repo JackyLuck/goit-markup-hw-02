@@ -877,7 +877,6 @@ input {
 }
 
 .subscribe-btn {
-    font-family: var(--main-font-family);
     display: flex;
     justify-content: center;
     border-radius: 4px;
