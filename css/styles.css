@@ -887,7 +887,6 @@ input {
     max-width: 165px;
     min-width: 165px;
     align-items: center;
-    font-family: "Roboto",sans-serif;
     height: 40px;
     color: var(--white, #FFF);
     text-align: center;
