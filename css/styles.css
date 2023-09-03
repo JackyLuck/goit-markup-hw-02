@@ -423,10 +423,19 @@ input {
 
 /* Features section */
 .features-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+@media screen and (min-width: 768px) {
+
 }
 
+@media screen and (min-width: 1158px) {
+    .features-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
 .features-list {
     display: flex;
     flex-direction: column;
@@ -723,11 +732,16 @@ input {
 
 .main-footer {
     background-color: var(--primary-text-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
 }
-
+@media screen and (min-width: 1158px) {
+    .main-footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -897,11 +911,11 @@ input {
     letter-spacing: 0.64px;
 }
 
-@media only screen and (max-width: 428px) {
+/* @media only screen and (max-width: 428px) {
     .subscribe-btn {
         margin-bottom: 96px;
     }
-}
+} */
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
@@ -1117,6 +1131,7 @@ input:checked span{
     }
 
 .privacy-checkbox {}
+
 .submit-btn{
     margin: auto;
     display: block;
@@ -1297,10 +1312,10 @@ input:checked span{
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* padding: 32px; */
     background-color: #ffffff;
     z-index: 999;
-
+    padding-top: 80px;
+    padding-left: 40px;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -1325,14 +1340,13 @@ input:checked span{
     margin: 0;
     list-style: none;
     gap: 40px;
-    margin-top: 80px;
-    margin-left: 40px;
+    
 }
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: var(--navyblue, #2E2F42);
+    color: var( #2E2F42);
     text-decoration: none;
     font-family: Roboto;
     font-size: 36px;
@@ -1346,4 +1360,12 @@ input:checked span{
 
 .mobile-menu .link:hover {
     color: var(--ocean, #404BBF);
+}
+
+.link-highlight {
+    color: #404BBF;
+}
+
+.link-unselected {
+     color: var(--navyblue, #2E2F42);
 }
