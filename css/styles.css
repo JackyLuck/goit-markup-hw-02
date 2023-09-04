@@ -365,7 +365,7 @@ input {
 .hero {
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-mobile.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/mobile-bg.jpg");
     background-color: var(--primary-text-color);
     display: flex;
     justify-content: center;
