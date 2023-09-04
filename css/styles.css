@@ -212,7 +212,7 @@ input {
     padding: 24px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navmenu {
         display: none;
     }
@@ -442,7 +442,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    min-width: 320px;
+    /* min-width: 320px; */
     justify-content: center;
 }
 
@@ -506,7 +506,7 @@ input {
     padding-bottom: 24px;
 }
 
- {
+ .features-subheading-style {
     margin-bottom: 8px;
     font-family: Roboto;
     font-size: 36px;
@@ -667,7 +667,6 @@ input {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 16px;
-    margin-bottom: 24px;
     justify-content: center;
 }
 
@@ -704,7 +703,7 @@ input {
 }
 
 .customer-list-item {
-    width: 190px;
+    width: calc((100% - 16px)/2);
     height: 88px;
 
 }
@@ -788,6 +787,7 @@ input {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    text-align: left;
 }
 
 .logo-style-footer {
@@ -805,6 +805,7 @@ input {
 
 @media only screen and (min-width: 768px) {
     .footer-paragraph {
+        align-items: start;
         margin-right: 24px;
         text-align: left;
         max-width: 264px;
@@ -917,6 +918,11 @@ input {
     color: #ffffff;
     text-align: center;
 }
+@media screen and (min-width: 768px) {
+    .footer-subscribe-text {
+        text-align: left;
+    }
+}
 @media screen and (min-width: 1158px) {
     .footer-subscribe-text {
         text-align: left;
@@ -1009,7 +1015,7 @@ input {
 
 .modal {
     position: absolute;
-    width: 408px;
+    max-width: 408px;
     min-height: 584px;
     top: 50%;
     left: 50%;
@@ -1025,7 +1031,6 @@ input {
 
 @media screen and (max-width: 428px) {
     .modal {
-        width: 392px;
         min-width: 320px;
     }
 }
@@ -1467,6 +1472,7 @@ input:checked span{
         line-height: 40px;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        color: var(--IRIS, #4D5AE5);
 }
 @media screen and (max-width: 400px) {
     .mobile-phone-item {
